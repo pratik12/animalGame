@@ -1,0 +1,22 @@
+{
+	"amphibians": [
+		{ "frog":[ 
+		 "Is it found in forests:y",
+		 "Does it have a long tongue:y",
+		 "Does it crok:y",
+		 "Does it thrive/live on insects:y",
+		 "Does it have a slimy skin:y",
+		 "Is it often eaten by snakes:y",
+		 "Are you thinking of a frog:y"]
+		 },
+		{ "turtle": [
+		  "Does it lay eggs:y",
+		  "Does it walk very slow on land:y",
+		  "Does it live for upto 60 years:y",
+		  "Does it have strong shell on its back:y",
+		  "Does it have a small neck:y",
+		  "Are you thinking of a turtle:y"] 
+		 } 
+	]
+	  
+}

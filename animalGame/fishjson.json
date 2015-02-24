@@ -1,0 +1,22 @@
+{
+	"fishes": [
+		{ "dolphin":[ 
+		 "Is it often found in captivity:y",
+		 "Does the animal make sweet sounds underwater:y",
+		 "Does it have great speeds:y",
+		 "Is it found in rivers also:y",
+		 "Is it found in gray, blakc and white colors:y",
+		 "Does it frequently come out of water to breathe:y",
+		 "Are you thinking of a dolphin:y"]
+		 },
+		{ "shark": [
+		   "Is it rarely found in captivity:n",
+		  "Is the most dangerous predator of oceans:y",
+		  "Does it have great speeds:y",
+		  "Is it found in gray and white colors:y",
+		  "Does it have strongest and sharpest teeth:y",
+		  "Are you thinking of a shark:y"] 
+		 } 
+	]
+	  
+}

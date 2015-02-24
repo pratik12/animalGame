@@ -1,0 +1,22 @@
+{
+	"birds": [
+		{ "crow":[ 
+		 "Is it found almost everywhere:y",
+		 "Is it found in cold regions:n",
+		 "Is it black in color:y",
+		 "Does it thrive/live on rodents:y",
+		 "Black in color:y",
+		 "Are you thinking of a crow:y"]
+		 },
+		{ "parrot": [
+		  "Is it found almost everywhere:y",
+		  "Is it found in cold regions:n",
+		  "Does it speak human tongue:y",
+		  "Does it eat snakes:n",
+		  "Does it colorful feathers:y",
+		  "Does it have a red beak:y",
+		  "Are you thinking of a parrot:y"] 
+		 } 
+	]
+	  
+}

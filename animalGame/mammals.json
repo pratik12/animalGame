@@ -1,0 +1,18 @@
+{
+	"mammals": [
+		{ "elephant":[ 
+		 "Is it largest living mammal on earth:y",
+		 "Is it only animal who has a trunk:y",
+		 "Is it very friendly with humans:y",
+		 "Does it live for close to 90 years:y",
+		 "Does it run at faster speeds:n",
+		 "Does it have big ears:y",
+		 "Are you thinking of a elephant:y"]
+		 },
+		{ "whale": [
+		  "Is it the largest living mammal in oceans:y",
+		  "Are you thinking of a whale:y"] 
+		 } 
+	]
+	  
+}
