@@ -41,3 +41,38 @@ public class Factory {
 	}
 
 }
+
+class AmphibianJSON extends ParentJson{
+
+	public AmphibianJSON(){}
+}
+
+class FishJSON extends ParentJson{
+	
+	public FishJSON() {
+		
+	}
+}
+
+class BirdsJSON extends ParentJson{
+	
+	public BirdsJSON() {
+		
+	}
+}
+
+class ReptilesJSON extends ParentJson{
+	
+	public ReptilesJSON() {
+		
+	}
+}
+
+class MammalJSON extends ParentJson{
+	
+	public MammalJSON() {
+		
+	}
+}
+
+

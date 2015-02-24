@@ -41,13 +41,9 @@ public void showAllQuestions(String keys, String filePath) throws JSONException,
 			JSONParser parser = new JSONParser();
 			Object obj = parser.parse(reader);
 			JSONObject jsonObj = new JSONObject(obj.toString());
-			
 			jsonArray = (JSONArray)jsonObj.getJSONArray(keys.toLowerCase());
 			
-			
 			JSONObject innerJsonObject = null ;
-			
-			
 			while(index<jsonArray.length()){
 				
 				innerJsonObject = jsonArray.getJSONObject(index);

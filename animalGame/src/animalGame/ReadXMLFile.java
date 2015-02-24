@@ -29,29 +29,22 @@ public class ReadXMLFile {
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 		Document doc = dBuilder.parse(XmlFile);
-	 
 		doc.getDocumentElement().normalize();
 		NodeList nList = doc.getElementsByTagName("animal");
-	 
 		for (int temp = 0; temp < nList.getLength(); temp++) {
 			Node nNode = nList.item(temp);
 			Node node = null;
-
 			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 				if (nNode.hasAttributes()) {
-					 
 					// get attributes names and values
 					NamedNodeMap nodeMap = nNode.getAttributes();
-		 
 					for (int i = 0; i < nodeMap.getLength(); i++) {
-		 
 						 node = nodeMap.item(i);
 					}
 				}
 				qmlObj.setQuestions(node.getNodeValue(), nNode.getTextContent());
 			}
 		}
-		
 		
 		Scanner in = new Scanner(System.in);
 		System.out.println("Start Press S to start the game and enter Y/N as your answer");
