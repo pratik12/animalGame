@@ -2,12 +2,10 @@
 <animals>
 
 <animal category="Fishes">Does it live only in water?</animal>
-<animal category="Amphibians">Does it live bot on land and in water?</animal>
-<animal category="Reptiles">Do they have a slim body structure?</animal>
+<animal category="Amphibians">Does it live both on land and in water?</animal>
+<animal category="Reptiles">The animal you are guessing belong to class reptile?</animal>
 <animal category="Birds">Does it fly?</animal>
-<animal category="Mammals"> Do they live mostly on land?</animal>	
-
-
+<animal category="Mammals"> Do they live mostly on land like humans?</animal>	
 </animals>
  
  

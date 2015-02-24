@@ -69,7 +69,13 @@ public void showAllQuestions(String keys, String filePath) throws JSONException,
 		}
 		   
 	  }
-
+	
+/**
+ * Tis method asks questions from the respective json's for each animal.
+ * @param temp2
+ * @param innerJsonObject
+ * @throws JSONException
+ */
 	private void startQuestions(String temp2, JSONObject innerJsonObject) throws JSONException {
 		int count = 2 ;
 		for(int i =0 ; i<(innerJsonObject.getJSONArray(temp2)).length();i++){
