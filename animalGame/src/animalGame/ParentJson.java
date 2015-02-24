@@ -92,10 +92,10 @@ public void showAllQuestions(String keys, String filePath) throws JSONException,
 			else if(count==0){
 				break;
 			}
-			System.out.println("Thank you for playing the game!");
 			in.close();
-			System.exit(0);
 		}
+		System.out.println("Thank you for playing the game!");
+		System.exit(0);
 	}
 	
 
