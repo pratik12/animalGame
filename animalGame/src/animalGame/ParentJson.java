@@ -11,27 +11,29 @@ import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+/**
+ * 
+ * @author Pratik Bidkar
+ * This class holds the logic for implementing the decision tree structure
+ * 
+ *
+ */
 public abstract class ParentJson {
 	
 	protected JSONObject jsonQuestionStore = new JSONObject();
 	JSONArray jsonArray=null;
 	int index = 0;
-	public JSONObject getJsonQuestionStore() {
-		return jsonQuestionStore;
-	}
 
-	public void setJsonQuestionStore(JSONObject jsonQuestionStore) {
-		this.jsonQuestionStore = jsonQuestionStore;
-	}
-	
-	
-	// declare a json here
-	// create it sseter and getter
-	// fn which will iterate over json and all its questions, should be overriden
-	// by child classes
-	// json should store keys similar to xml node attributes and the
-	// respective questions
-	  public void showAllQuestions(String keys, String filePath) throws JSONException, IOException, ParseException{
+	/**
+	 * This method displays the questions from the respective json file
+	 * This function parses the json file, extracts the json object and the json arrays
+	 * @param keys
+	 * @param filePath
+	 * @throws JSONException
+	 * @throws IOException
+	 * @throws ParseException
+	 */
+public void showAllQuestions(String keys, String filePath) throws JSONException, IOException, ParseException{
 		  
 		  FileReader reader = null;
 		try {
@@ -49,8 +51,7 @@ public abstract class ParentJson {
 			while(index<jsonArray.length()){
 				
 				innerJsonObject = jsonArray.getJSONObject(index);
-				JsonMapper jm = new JsonMapper();
-				JSONArray result = jm.loadFromMapper(keys.toLowerCase());
+				JSONArray result = JsonMapper.loadFromMapper(keys.toLowerCase());
 					
 					if(result.length()!=0){
 						String temp = result.getString(index);
@@ -73,7 +74,7 @@ public abstract class ParentJson {
 		int count = 2 ;
 		for(int i =0 ; i<(innerJsonObject.getJSONArray(temp2)).length();i++){
 			Scanner in = new Scanner(System.in);
-			System.out.println(innerJsonObject.getJSONArray(temp2).getString(i).split(":")[0] + " Enter (Y/N)");
+			System.out.println(innerJsonObject.getJSONArray(temp2).getString(i).split(":")[0]+"?" + " Enter (Y/N)");
 			
 			String input = in.next();
 			if(input.equalsIgnoreCase("n")&& count!=0 && 

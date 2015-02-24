@@ -10,9 +10,17 @@ import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-class JsonMapper {
+/**
+ * This class contains the mapper json which contains the mapping for 
+ * json keys and its respective nested json keys.
+ * The method displays the questions from the respective json file
+ * The function parses the json file, extracts the json
+ * @author Pratik Bidkar
+ *
+ */
+abstract class JsonMapper {
 	
-	public JSONArray loadFromMapper(String keyToMatch) throws IOException, ParseException, JSONException{
+	public static JSONArray loadFromMapper(String keyToMatch) throws IOException, ParseException, JSONException{
 		FileReader reader = null;
 		reader = new FileReader("mapper.json");
 		
