@@ -3,10 +3,14 @@ package animalGame;
 import java.io.IOException;
 
 import org.json.JSONException;
-import org.json.JSONObject;
 import org.json.simple.parser.ParseException;
 
-
+/**
+ * 
+ * @author Pratik Bidkar
+ * This class behaves like a factory and will give you the appropriate JSON
+ * that will be required at the runtime
+ */
 public class Factory {
 	
 	public Factory(){}

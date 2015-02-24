@@ -1,10 +1,13 @@
 package animalGame;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
-import org.json.JSONObject;
-
+/**
+ * 
+ * @author Pratik Bidkar
+ * Store the questions from xml into a hashmap datastructure
+ *
+ */
 public class QuestionXML {
 
 	private HashMap<String, String> questions = new HashMap<String,String>();

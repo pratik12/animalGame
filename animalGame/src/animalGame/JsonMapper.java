@@ -1,6 +1,5 @@
 package animalGame;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Iterator;
@@ -17,11 +16,10 @@ class JsonMapper {
 		FileReader reader = null;
 		reader = new FileReader("mapper.json");
 		
-		org.json.simple.JSONObject json = new org.json.simple.JSONObject();
 		JSONParser parser = new JSONParser();
 		Object obj = parser.parse(reader);
 		JSONObject jsonObj = new JSONObject(obj.toString());
-		reader.close();
+		
 		 Iterator<?> keys = jsonObj.keys();
 
 	        while( keys.hasNext() ){
@@ -31,7 +29,8 @@ class JsonMapper {
 	            }
 	            
 	        }
-			return null;
+	        reader.close();        
+	return null;
 		
 	}
 	

@@ -1,20 +1,22 @@
 package animalGame;
 
 import java.io.File;
-import java.util.List;
 import java.util.Scanner;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.w3c.dom.Document;
-import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-
- 
+/**
+ *  
+ * @author Pratik Bidkar
+ * This class starts the process of reading the xml file and get the initial set of questions
+ * 
+ */
 public class ReadXMLFile {
  
 	static QuestionXML qmlObj = new QuestionXML();
@@ -23,7 +25,7 @@ public class ReadXMLFile {
 		
 	try {
 		 
-		File XmlFile = new File("C://questions.xml");
+		File XmlFile = new File("questions.xml");
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 		Document doc = dBuilder.parse(XmlFile);
@@ -34,7 +36,7 @@ public class ReadXMLFile {
 		for (int temp = 0; temp < nList.getLength(); temp++) {
 			Node nNode = nList.item(temp);
 			Node node = null;
-			//System.out.println("\nCurrent Element :" + nNode.getNodeValue());
+
 			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
 				if (nNode.hasAttributes()) {
 					 
@@ -52,12 +54,16 @@ public class ReadXMLFile {
 		
 		
 		Scanner in = new Scanner(System.in);
-		System.out.println("Start Press S to start the game and Y/N as your answer");
+		System.out.println("Start Press S to start the game and enter Y/N as your answer");
 		String input = in.next().trim();
 		if(input.equalsIgnoreCase("s")){
 			PlayGame pg = new PlayGame();
 			pg.game(input, qmlObj);
 			
+		}else
+		{
+			System.out.println("Enter a valid character");
+			in.close();
 		}
 		
 		

@@ -7,10 +7,17 @@ import java.util.Scanner;
 import org.json.JSONException;
 import org.json.simple.parser.ParseException;
 
+/**
+ * 
+ * @author Pratik Bidkar
+ * This class will call the factory method .
+ * This class iterates through the xml to ask the initial set of questions at level 1 of
+ * logical decision tree
+ *
+ */
 public class PlayGame {
 	
 	
-	@SuppressWarnings("resource")
 	public void game(String qns,QuestionXML xmlQns) throws JSONException, IOException, ParseException{
 		
 		if(qns.equalsIgnoreCase("s") && !(xmlQns.getQuestions().isEmpty()) ){
@@ -19,7 +26,7 @@ public class PlayGame {
 				
 					Factory factory = new Factory();
 					Scanner m = new Scanner(System.in);
-					System.out.println(entry.getValue() + "\n Enter Y or N");
+					System.out.println(entry.getValue()+"?" + "\n Enter Y or N");
 					String answer = m.next();
 					
 					if(answer.equalsIgnoreCase("Y")){
@@ -37,7 +44,7 @@ public class PlayGame {
 						System.out.println("Enter a valid choice (Y/N)");
 					}
 				
-				
+				m.close();
 				break;
 			}
 			
