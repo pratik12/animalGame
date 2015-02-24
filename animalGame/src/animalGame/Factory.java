@@ -22,15 +22,15 @@ public class Factory {
 			jsonObject.showAllQuestions(questionKey,"amphibian.json");
 		}
 		else if(questionKey.equalsIgnoreCase("mammals")){
-			ParentJson jsonObject = new AmphibianJSON();
+			ParentJson jsonObject = new MammalJSON();
 			jsonObject.showAllQuestions(questionKey,"mammals.json");
 		}
 		else if(questionKey.equalsIgnoreCase("birds")){
-			ParentJson jsonObject = new AmphibianJSON();
+			ParentJson jsonObject = new BirdsJSON();
 			jsonObject.showAllQuestions(questionKey,"birds.json");
 		}
 		else if(questionKey.equalsIgnoreCase("reptiles")){
-			ParentJson jsonObject = new AmphibianJSON();
+			ParentJson jsonObject = new ReptilesJSON();
 			jsonObject.showAllQuestions(questionKey,"reptiles.json");
 		}
 		
