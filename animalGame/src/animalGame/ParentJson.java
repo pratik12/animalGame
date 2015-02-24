@@ -104,9 +104,6 @@ public void showAllQuestions(String keys, String filePath) throws JSONException,
 			in.close();
 		}
 		
-		System.out.println("Thank you for playing the game");
-		System.exit(0);
-		
 	}
 	
 
