@@ -1,0 +1,9 @@
+{
+	"fishes": [ "dolphin" , "shark" ],
+	"amphibians": [ "frog" , "turtle"],
+	"mammals": [ "elephant" , "whale"],
+	"reptiles": [ "crocodile" , "snake"],
+	"birds": [ "crow" , "parrot"]
+		
+	  
+}

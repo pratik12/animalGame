@@ -1,0 +1,22 @@
+{
+	"reptiles": [
+		{ "crocodile":[ 
+		 "Does it have a strong jaw:y",
+		 "Does it lay eggs:y",
+		 "Does it have sharpest teeth and kills other mammals:y",
+		 "Does it kill zebras and deer:y",
+		 "Does it have very rough body texture:y",
+		 "Is it a descendant of dinosaours:y",
+		 "Are you thinking of a crocodile:y"]
+		 },
+		{ "snake": [
+		  "Does it lay eggs:y",
+		  "Does it shed its skin:y",
+		  "Is it poisonous:y",
+		  "Does it have a forked tongue:y",
+		  "Does it have strong smell sense:y",
+		  "Are you thinking of a snake:y"] 
+		 } 
+	]
+	  
+}
