@@ -9,7 +9,9 @@ import org.json.simple.parser.ParseException;
  * 
  * @author Pratik Bidkar
  * This class behaves like a factory and will give you the appropriate JSON
- * that will be required at the runtime
+ * that will be required at the runtime.
+ * This class can be further reused to implement any in memory data operations and add more methods to each 
+ * child class
  */
 public class Factory {
 	
@@ -49,30 +51,22 @@ class AmphibianJSON extends ParentJson{
 
 class FishJSON extends ParentJson{
 	
-	public FishJSON() {
-		
-	}
+	public FishJSON() {}
 }
 
 class BirdsJSON extends ParentJson{
 	
-	public BirdsJSON() {
-		
-	}
+	public BirdsJSON() {}
 }
 
 class ReptilesJSON extends ParentJson{
 	
-	public ReptilesJSON() {
-		
-	}
+	public ReptilesJSON() {}
 }
 
 class MammalJSON extends ParentJson{
 	
-	public MammalJSON() {
-		
-	}
+	public MammalJSON() {}
 }
 
 

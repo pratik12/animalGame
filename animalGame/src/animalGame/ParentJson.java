@@ -90,15 +90,23 @@ public void showAllQuestions(String keys, String filePath) throws JSONException,
 				continue;
 			}
 			else if(innerJsonObject.getJSONArray(temp2).getString(i).split(":")[1].equalsIgnoreCase(input)){
-				continue;
+				
+				if(count!=0 && i==(innerJsonObject.getJSONArray(temp2)).length()-1){
+					System.out.println("Thank you for playing the game");
+					System.exit(0);
+				}else{
+					continue;
+				}
 			}
-			else if(count==0){
+			else if(count == 0){
 				break;
 			}
 			in.close();
 		}
-		System.out.println("Thank you for playing the game!");
+		
+		System.out.println("Thank you for playing the game");
 		System.exit(0);
+		
 	}
 	
 
