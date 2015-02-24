@@ -38,8 +38,6 @@ public class Factory {
 			jsonObject.showAllQuestions(questionKey,"reptiles.json");
 		}
 		
-		
-		
 	}
 
 }

@@ -17,14 +17,14 @@ import org.json.simple.parser.ParseException;
  */
 public class PlayGame {
 	
-	
+	Factory factory = null;
 	public void game(String qns,QuestionXML xmlQns) throws JSONException, IOException, ParseException{
 		
 		if(qns.equalsIgnoreCase("s") && !(xmlQns.getQuestions().isEmpty()) ){
 			// start asking qns from xml nodes as filter level 1
 			for(Entry<String, String> entry : xmlQns.getQuestions().entrySet()){
 				
-					Factory factory = new Factory();
+					factory = new Factory();
 					Scanner m = new Scanner(System.in);
 					System.out.println(entry.getValue()+"?" + "\n Enter Y or N");
 					String answer = m.next();
